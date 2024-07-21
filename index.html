@@ -5,6 +5,7 @@
   
   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="0; url=menu.html">
 <style>
 /* .loader {
   margin-left: 320px;
@@ -21,7 +22,7 @@
   text-align: center;
 } */
 
-@-webkit-keyframes spin {
+/* @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
 }
@@ -29,33 +30,35 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
+} */
 </style>
 </head>
 <body>
-<div class="loader"></div>
+<!-- <div class="loader"></div> -->
 </style>
 </head>
-<body onload="myFunction()" style="margin:0;">
-<div id="loader"></div>
+<!-- <body onload="myFunction()" style="margin:0;"> -->
+<!-- <div id="loader"></div> -->
 
-<h1>Phenomenal</h1>
+<!-- <h1>Phenomenal</h1> -->
 
-<div style="display:none;" id="myDiv" class="animate-bottom">
+<!-- <div style="display:none;" id="myDiv" class="animate-bottom"> -->
   
 
   <p><a href="menu.html">⏩</a></p>
 </div>
 
 <script>
+
+window.location.href = 'menu.html';
 var myVar;
 
-function myFunction() {
-  myVar = setTimeout(showPage, 500);
-}
+// function myFunction() {
+//   myVar = setTimeout(showPage, 500);
+// }
 
 function showPage() {
-  document.getElementById("loader").style.display = "none";
+  // document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
 </script>
